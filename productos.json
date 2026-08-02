@@ -1,9 +1,11 @@
 {
-  "_comentario": "Catalogo de Suchel Proquimia. Para agregar un producto, copia un bloque y edita. 'categoria' agrupa en el menu. La ficha tecnica se muestra tal cual en 'ficha'. Usa \\n para saltos de linea.",
+  "_comentario": "Catalogo de Suchel Proquimia. Para agregar un producto, copia un bloque y edita. 'categoria' agrupa en el menu (debe coincidir con un id de 'categorias'). La ficha se muestra tal cual en 'ficha'. Usa \\n para saltos de linea, *negrita* y _cursiva_. Dosis tomadas de las fichas tecnicas oficiales.",
   "categorias": [
     { "id": "piscina", "nombre": "🏊 Piscina" },
-    { "id": "limpieza", "nombre": "🧽 Limpieza e higiene" },
-    { "id": "otros", "nombre": "📦 Otros productos" }
+    { "id": "limpieza", "nombre": "🧽 Limpieza y desengrase" },
+    { "id": "bano", "nombre": "🚽 Baño y sanitarios" },
+    { "id": "higiene", "nombre": "🧴 Higiene personal" },
+    { "id": "lavanderia", "nombre": "👕 Lavandería" }
   ],
   "productos": [
     {
@@ -40,6 +42,83 @@
       "categoria": "piscina",
       "resumen": "Elevador de pH liquido.",
       "ficha": "🧪 *PH PLUS L*\n\n• Tipo: Elevador de pH (liquido).\n• Uso: sube el pH cuando esta por debajo de 7,2.\n\n*Objetivo:* mantener el pH entre 7,2 y 7,6.\n\n_Agrega poco a poco con la bomba encendida y vuelve a medir antes de repetir. Consulta la dosis exacta segun tu medicion._"
+    },
+    {
+      "id": "amon",
+      "nombre": "AMON",
+      "categoria": "limpieza",
+      "resumen": "Detergente amoniacal multiusos con fragancia de pino.",
+      "ficha": "🧴 *AMON*\n\n• Tipo: Detergente amoniacal multiusos.\n• Uso: limpia y desengrasa todo tipo de superficies, sanitarios, suelos, electrodomesticos y plasticos. Deja perfume a pino.\n\n*Dosis:* 2–4% diluido en agua, aplicado manualmente.\n\n_Contiene secuestrantes que evitan el sarro. En superficies que tocan alimentos, enjuagar con agua despues._"
+    },
+    {
+      "id": "sanibrill",
+      "nombre": "SANIBRILL",
+      "categoria": "limpieza",
+      "resumen": "Detergente multiusos de alto brillo.",
+      "ficha": "🧴 *SANIBRILL*\n\n• Tipo: Detergente multiusos, formula alto brillo.\n• Uso: lavabos, baños, sanitarios, suelos y superficies en general. Deja brillo sin residuos ni velos.\n\n*Dosis:* 2–4%, puro o diluido en agua.\n\n_No ataca los materiales: apto para superficies esmaltadas, pintadas, lacadas o cromadas._"
+    },
+    {
+      "id": "stel_conservacion",
+      "nombre": "STEL CONSERVACIÓN",
+      "categoria": "limpieza",
+      "resumen": "Fregasuelos de conservacion, sin aclarado.",
+      "ficha": "🧴 *STEL CONSERVACIÓN*\n\n• Tipo: Fregasuelos para limpieza manual.\n• Uso: todo tipo de suelos, incluso encerados y abrillantados. Deja perfume en el ambiente.\n\n*Dosis:* 1–3% en agua.\n\n_Friega y deja secar, no necesita aclarado. Pasa una mopa seca despues para mas brillo._"
+    },
+    {
+      "id": "supervix",
+      "nombre": "SUPERVIX",
+      "categoria": "limpieza",
+      "resumen": "Desengrasante energico para grasa tenaz.",
+      "ficha": "🧴 *SUPERVIX*\n\n• Tipo: Desengrasante energico.\n• Uso: grasa dificil en superficies y utensilios en contacto con alimentos, campanas extractoras, filtros, freidoras, encimeras y suelos no abrillantados.\n\n*Dosis:* 3–6%, por pulverizacion o inmersion. Dejar actuar y enjuagar.\n\n_No usar sobre aluminio, zinc ni superficies pintadas._"
+    },
+    {
+      "id": "clean_plac",
+      "nombre": "CLEAN PLAC",
+      "categoria": "limpieza",
+      "resumen": "Desengrasante para hornos y planchas de cocina.",
+      "ficha": "🧴 *CLEAN PLAC*\n\n• Tipo: Desengrasante para superficies calientes.\n• Uso: hornos, planchas de cocina y superficies muy engrasadas. Espuma que se adhiere en vertical.\n\n*Modo de empleo:* pulverizar sobre la superficie caliente (~60 ºC), dejar actuar unos minutos y enjuagar con abundante agua.\n\n_Apto para casi todos los metales, excepto el aluminio pulido._"
+    },
+    {
+      "id": "teide",
+      "nombre": "TEIDE",
+      "categoria": "limpieza",
+      "resumen": "Lavavajillas manual concentrado con dermoprotectores.",
+      "ficha": "🧴 *TEIDE*\n\n• Tipo: Lavavajillas concentrado para lavado manual.\n• Uso: vajilla, cristaleria, ollas, bandejas y baterias de cocina. Gran poder desengrasante, seca sin velos y devuelve el brillo.\n\n*Dosis:* 2–6 g/L segun la suciedad.\n\n_Contiene agentes dermoprotectores que cuidan la piel. Eficaz en aguas duras o blandas._"
+    },
+    {
+      "id": "wc6",
+      "nombre": "WC 6",
+      "categoria": "bano",
+      "resumen": "Desincrustante de inodoros y urinarios.",
+      "ficha": "🚽 *WC 6*\n\n• Tipo: Desincrustante de inodoros y urinarios.\n• Uso: elimina sarro, cal, manchas de sales y oxidos; desodoriza y recupera el brillo.\n\n*Modo de empleo:* aplicar puro en zig-zag sobre las paredes del sanitario, repartir con la escobilla, dejar actuar 10–15 min y enjuagar.\n\n_No aplicar sobre griferia ni bañeras esmaltadas._"
+    },
+    {
+      "id": "netcal_wc",
+      "nombre": "NETCAL WC",
+      "categoria": "bano",
+      "resumen": "Limpiador de baño triple accion: desincrusta, limpia y desodoriza.",
+      "ficha": "🚽 *NETCAL WC*\n\n• Tipo: Limpiador desincrustante de baños.\n• Uso: elimina cal, jabon y suciedad en sanitarios, griferia, duchas y mamparas. Deja brillo y fragancia fresca.\n\n*Modo de empleo:*\n• Superficies y griferia: diluir al 3–5%, dejar actuar, frotar y enjuagar.\n• WC: aplicar una pequeña cantidad dentro de la taza, frotar con escobilla y tirar de la cadena.\n\n_No usar sobre bañeras esmaltadas, marmol, aluminio ni cobre._"
+    },
+    {
+      "id": "vitasan",
+      "nombre": "VITASAN",
+      "categoria": "higiene",
+      "resumen": "Gel de higiene personal para manos y cuerpo.",
+      "ficha": "🧴 *VITASAN*\n\n• Tipo: Gel de higiene personal, fragancia floral.\n• Uso: lavado diario de manos y cuerpo. Con ingredientes suavizantes y emolientes, testado dermatologicamente.\n\n*Dosis:* 1–2 g, aplicado puro (manual o con dosificador).\n\n_Espumante y facil de enjuagar._"
+    },
+    {
+      "id": "derjabon",
+      "nombre": "DERJABON",
+      "categoria": "higiene",
+      "resumen": "Jabon desengrasante para manos de operarios.",
+      "ficha": "🧴 *DERJABON*\n\n• Tipo: Jabon detergente para manos, olor a limon.\n• Uso: limpieza y proteccion de manos en la industria. Alto poder desengrasante sin irritar la piel.\n\n*Dosis:* 1–1,5 g, puro mediante dispensador.\n\n_Baja dosis de uso: gran rendimiento y economia._"
+    },
+    {
+      "id": "acariz",
+      "nombre": "ACARIZ",
+      "categoria": "lavanderia",
+      "resumen": "Suavizante perfumado para ropa, antiestatico.",
+      "ficha": "👕 *ACARIZ*\n\n• Tipo: Suavizante perfumado de alto rendimiento.\n• Uso: todo tipo de tejidos y fibras. Aporta suavidad, esponjosidad y perfume; elimina la electricidad estatica y facilita el planchado.\n\n*Dosis:* 2–6 g/kg de ropa seca, en el ultimo aclarado.\n\n_Al ser liquido, se puede dosificar automaticamente._"
     }
   ]
 }
