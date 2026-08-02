@@ -1,0 +1,11 @@
+# Configuracion del Worker para el deploy conectado a GitHub (Workers Builds).
+# Cloudflare lee este archivo del repo y despliega cloudflare/worker.js.
+name = "suchel-bot"
+main = "cloudflare/worker.js"
+compatibility_date = "2024-11-11"
+
+# Variables NO secretas (se pueden ver en el repo).
+# El BOT_TOKEN NO va aqui: se pone como *Secret* en el panel de Cloudflare.
+[vars]
+TIENDA_URL = "https://tienda.suchelproquimia.com/"
+WHATSAPP_URL = "https://whatsapp.com/channel/0029VbBO6nH6rsQwnnnleb2w"
