@@ -244,6 +244,20 @@ async function manejarUpdate(update, env) {
     const chatId = msg.chat.id;
     const texto = msg.text.trim();
 
+    // Utilidad para obtener el ID de este chat (sirve para configurar el grupo).
+    if (texto.startsWith("/id")) {
+      await tg(env, "sendMessage", {
+        chat_id: chatId,
+        text:
+          "🆔 *ID de este chat*\n\n`" +
+          msg.chat.id +
+          "`\n\nTipo: " +
+          msg.chat.type,
+        parse_mode: "Markdown",
+      });
+      return;
+    }
+
     if (texto.startsWith("/start") || texto.startsWith("/ayuda") || texto.startsWith("/help")) {
       await tg(env, "sendMessage", {
         chat_id: chatId,
