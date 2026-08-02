@@ -17,6 +17,8 @@ Config por variables de entorno (ver .env.example):
 import json
 import logging
 import os
+import threading
+from http.server import BaseHTTPRequestHandler, HTTPServer
 from pathlib import Path
 
 try:
@@ -317,6 +319,30 @@ async def mensaje_texto(update: Update, context: ContextTypes.DEFAULT_TYPE) -> N
 
 
 # --------------------------------------------------------------------------- #
+# Servidor de salud (health check para plataformas como Koyeb/Railway)
+# --------------------------------------------------------------------------- #
+class _HealthHandler(BaseHTTPRequestHandler):
+    def do_GET(self):  # noqa: N802
+        self.send_response(200)
+        self.send_header("Content-Type", "text/plain; charset=utf-8")
+        self.end_headers()
+        self.wfile.write(b"OK - Suchel Proquimia bot en linea")
+
+    def log_message(self, *args):  # silencia el log de cada ping
+        pass
+
+
+def iniciar_health_server() -> None:
+    """Levanta un pequeño HTTP en $PORT para que el hosting vea el servicio vivo.
+    Se ejecuta en un hilo aparte para no bloquear el bot."""
+    puerto = int(os.environ.get("PORT", "8080"))
+    servidor = HTTPServer(("0.0.0.0", puerto), _HealthHandler)
+    hilo = threading.Thread(target=servidor.serve_forever, daemon=True)
+    hilo.start()
+    logger.info("Health server escuchando en el puerto %s", puerto)
+
+
+# --------------------------------------------------------------------------- #
 # Arranque
 # --------------------------------------------------------------------------- #
 def main() -> None:
@@ -324,6 +350,8 @@ def main() -> None:
         raise SystemExit(
             "Falta BOT_TOKEN. Define la variable de entorno con el token de BotFather."
         )
+
+    iniciar_health_server()
 
     app = Application.builder().token(BOT_TOKEN).build()
 
