@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo — chat-suchel</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        background: #eef3f6;
+        color: #13495f;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 40px;
+      }
+      h1 { margin: 0 0 8px; }
+      p { color: #5a88a0; max-width: 480px; }
+      .tag {
+        margin-top: 20px;
+        font-size: 13px;
+        background: #fff;
+        padding: 8px 14px;
+        border-radius: 8px;
+        color: #5a88a0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Tienda Suchel Proquimia (demo)</h1>
+    <p>
+      Esta pagina simula la tienda. Abajo a la derecha esta el chat
+      <code>&lt;chat-suchel&gt;</code>. Pulsalo para probarlo.
+    </p>
+    <div class="tag">👉 Pulsa el boton 💬 de la esquina inferior derecha</div>
+
+    <!-- data-src="../" porque los .json estan en la carpeta padre del proyecto -->
+    <script src="chat-suchel.js" defer></script>
+    <chat-suchel data-src="../"></chat-suchel>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "_comentario": "Enlaces del menu 'Enlaces y redes'. Para agregar/editar, copia un bloque y cambia 'texto' (lo que ve el cliente en el boton) y 'url'. El orden aqui es el orden en el menu.",
+  "enlaces": [
+    {
+      "texto": "📋 Catalogo de productos",
+      "url": "https://cuboid-production-004.notion.site/Cat-logo-de-Productos-f40e8f8290fb466eb9cc4942cc9b6cb6"
+    },
+    {
+      "texto": "💬 Canal de WhatsApp",
+      "url": "https://whatsapp.com/channel/0029VbBO6nH6rsQwnnnleb2w"
+    },
+    {
+      "texto": "📸 Instagram",
+      "url": "https://www.instagram.com/suchelproquimia.cuba/"
+    },
+    {
+      "texto": "👍 Facebook",
+      "url": "https://www.facebook.com/share/1DbCjyTy4s/"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "_comentario": "Preguntas frecuentes. Para agregar una, copia un bloque y edita. Se muestran como botones en el menu de FAQ.",
+  "faq": [
+    {
+      "id": "comprar",
+      "pregunta": "¿Como compro?",
+      "respuesta": "🛍️ Puedes comprar directamente en nuestra tienda online. Elige el producto, agregalo al carrito y sigue los pasos de pago. Si necesitas ayuda, escribenos por *Atencion al cliente*."
+    },
+    {
+      "id": "envios",
+      "pregunta": "¿Hacen envios?",
+      "respuesta": "🚚 Si. Coordinamos el envio al confirmar tu pedido. El costo y el tiempo dependen de tu ubicacion. Escribenos por *Atencion al cliente* para conocer los detalles de tu zona."
+    },
+    {
+      "id": "pagos",
+      "pregunta": "¿Que formas de pago aceptan?",
+      "respuesta": "💳 Aceptamos las formas de pago disponibles en la tienda online. Para pagos especiales o dudas, contactanos por *Atencion al cliente*."
+    },
+    {
+      "id": "disponibilidad",
+      "pregunta": "¿Tienen disponibilidad de un producto?",
+      "respuesta": "📦 La disponibilidad se actualiza en la tienda online. Consulta el producto alli o escribenos por *Atencion al cliente* y te confirmamos."
+    },
+    {
+      "id": "horario",
+      "pregunta": "¿Cual es el horario de atencion?",
+      "respuesta": "⏰ Atendemos de lunes a viernes de 9:00 a.m. a 5:00 p.m. El bot esta disponible las 24 horas para informacion."
+    }
+  ]
+}

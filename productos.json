@@ -1,0 +1,45 @@
+{
+  "_comentario": "Catalogo de Suchel Proquimia. Para agregar un producto, copia un bloque y edita. 'categoria' agrupa en el menu. La ficha tecnica se muestra tal cual en 'ficha'. Usa \\n para saltos de linea.",
+  "categorias": [
+    { "id": "piscina", "nombre": "🏊 Piscina" },
+    { "id": "limpieza", "nombre": "🧽 Limpieza e higiene" },
+    { "id": "otros", "nombre": "📦 Otros productos" }
+  ],
+  "productos": [
+    {
+      "id": "procloro_tabs",
+      "nombre": "PROCLORO TABS",
+      "categoria": "piscina",
+      "resumen": "Cloro en tabletas de 200 g (90% activo) para desinfeccion de piscinas.",
+      "ficha": "🧪 *PROCLORO TABS*\n\n• Tipo: Cloro solido (tricloro), tabletas de 200 g.\n• Cloro activo: 90%.\n• Uso: desinfeccion y mantenimiento del agua.\n\n*Dosis:*\n• Mantenimiento: 1 tableta por cada 10 m³ de agua.\n• Supercloracion (choque): hasta 5–10 ppm.\n\n_Coloca las tabletas en el dosificador flotante o skimmer. No las tires directamente al fondo._"
+    },
+    {
+      "id": "alganet",
+      "nombre": "ALGANET",
+      "categoria": "piscina",
+      "resumen": "Alguicida preventivo y de choque contra algas.",
+      "ficha": "🧪 *ALGANET*\n\n• Tipo: Alguicida liquido.\n• Uso: previene y elimina algas en el agua.\n\n*Dosis:*\n• Mantenimiento: 10–20 ml/m³ semanal.\n• Tratamiento de choque: 30–50 ml/m³.\n• Piscinas sin cloro: 35–40 ml/m³.\n\n_Aplicar con la bomba en funcionamiento para distribuir el producto._"
+    },
+    {
+      "id": "deflocar",
+      "nombre": "DEFLOCAR",
+      "categoria": "piscina",
+      "resumen": "Floculante para aclarar agua turbia.",
+      "ficha": "🧪 *DEFLOCAR*\n\n• Tipo: Floculante.\n• Uso: agrupa las particulas en suspension para aclarar el agua.\n\n*Dosis:*\n• Agua turbia: 25–35 g/m³.\n• Agua muy turbia: 35–50 g/m³.\n• Predisolver: 10 g por litro de agua antes de aplicar.\n\n_Tras aplicar, deja reposar y luego aspira los sedimentos del fondo._"
+    },
+    {
+      "id": "ph_minus_l",
+      "nombre": "PH MINUS L",
+      "categoria": "piscina",
+      "resumen": "Reductor de pH liquido.",
+      "ficha": "🧪 *PH MINUS L*\n\n• Tipo: Reductor de pH (liquido).\n• Uso: baja el pH cuando esta por encima de 7,6.\n\n*Objetivo:* mantener el pH entre 7,2 y 7,6.\n\n_Agrega poco a poco con la bomba encendida y vuelve a medir antes de repetir. Consulta la dosis exacta segun tu medicion._"
+    },
+    {
+      "id": "ph_plus_l",
+      "nombre": "PH PLUS L",
+      "categoria": "piscina",
+      "resumen": "Elevador de pH liquido.",
+      "ficha": "🧪 *PH PLUS L*\n\n• Tipo: Elevador de pH (liquido).\n• Uso: sube el pH cuando esta por debajo de 7,2.\n\n*Objetivo:* mantener el pH entre 7,2 y 7,6.\n\n_Agrega poco a poco con la bomba encendida y vuelve a medir antes de repetir. Consulta la dosis exacta segun tu medicion._"
+    }
+  ]
+}
