@@ -273,16 +273,18 @@ async function manejarUpdate(update, env) {
       const u = msg.from || {};
       let etiqueta = [u.first_name, u.last_name].filter(Boolean).join(" ");
       if (u.username) etiqueta += " (@" + u.username + ")";
+      // Texto plano a proposito: el nombre/usuario/mensaje del cliente pueden
+      // contener caracteres (_ * ` [) que romperian el formato Markdown y harian
+      // que Telegram rechace el reenvio.
       await tg(env, "sendMessage", {
         chat_id: env.ADMIN_CHAT_ID,
         text:
-          "📩 *Nueva consulta de cliente*\n\nDe: " +
+          "📩 Nueva consulta de cliente\n\nDe: " +
           etiqueta +
-          "\nID: `" +
+          "\nID: " +
           u.id +
-          "`\n\n" +
+          "\n\n" +
           texto,
-        parse_mode: "Markdown",
       });
     }
     await tg(env, "sendMessage", {
