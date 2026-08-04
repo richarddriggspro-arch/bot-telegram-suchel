@@ -25,6 +25,11 @@
       "id": "horario",
       "pregunta": "¿Cual es el horario de atencion?",
       "respuesta": "⏰ Atendemos de lunes a viernes de 9:00 a.m. a 5:00 p.m. El bot esta disponible las 24 horas para informacion."
+    },
+    {
+      "id": "tiendas_fisicas",
+      "pregunta": "¿En que tiendas fisicas puedo comprar?",
+      "respuesta": "🏬 Puedes ver todas nuestras tiendas fisicas y su ubicacion aqui:\nhttps://bit.ly/entiendas"
     }
   ]
 }
